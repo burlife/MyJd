@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="0.09">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/five_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@mipmap/yhtx"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/five_btn_dl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/five_imageView"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/five_imageView"
+            android:layout_toRightOf="@+id/five_imageView"
+            android:text="登录/注册"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</LinearLayout>

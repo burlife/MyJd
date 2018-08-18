@@ -1,0 +1,20 @@
+package com.example.mjd.imitate_jd;
+
+import android.content.Context;
+import android.net.Uri;
+import android.widget.ImageView;
+
+import com.facebook.drawee.view.SimpleDraweeView;
+import com.youth.banner.loader.ImageLoader;
+
+public class GlideImagerLoder extends ImageLoader{
+    @Override
+    public void displayImage(Context context, Object path, ImageView imageView) {
+        Uri uri= Uri.parse((String)path);
+        imageView.setImageURI(uri);
+    }
+    public ImageView createImageView(Context context) {
+        SimpleDraweeView simpleDraweeView=new SimpleDraweeView(context);
+        return simpleDraweeView;
+    }
+}

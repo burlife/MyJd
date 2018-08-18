@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mjd.imitate_jd.activity.DetailsActivity">
+    <com.youth.banner.Banner
+        android:id="@+id/mbanner"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" />
+    <TextView
+        android:id="@+id/price_name"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/gainsboro"
+        android:layout_height="12dp"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/d_ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="商品评价"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="查看全部>"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="200dp"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/d_pj_lv"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="465dp"></ListView>
+    <Button
+        android:id="@+id/gwc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="加入购物车"
+        android:textSize="20sp"
+        android:background="@color/crimson"
+        />
+
+</LinearLayout>

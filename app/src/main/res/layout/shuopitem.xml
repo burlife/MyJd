@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_shop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:roundAsCircle="true"  />
+
+    <TextView
+        android:id="@+id/name_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/image_shop"
+        android:layout_toRightOf="@+id/image_shop"
+        android:text="名称" />
+
+    <TextView
+        android:id="@+id/price_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_shop"
+        android:layout_alignLeft="@+id/name_shop"
+        android:layout_alignStart="@+id/name_shop"
+        android:textColor="#cf0606"
+        android:textSize="20sp"
+        android:text="价格" />
+</RelativeLayout>
